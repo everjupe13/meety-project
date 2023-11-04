@@ -1,0 +1,23 @@
+@import 'core';
+
+.scroll-x-hidden {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+    height: 0 !important;
+  }
+}
+
+:root {
+  --black: #000000;
+  --background: #0e0e0f;
+  --topground: #1b1b1e;
+  --hover-topground: #262629;
+
+  --white: #ffffff;
+
+  --primary: var(--topground);
+  --primary-foreground: var(--white);
+
+  --contrast-accent: #d3f26a;
+}

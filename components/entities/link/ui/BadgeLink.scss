@@ -1,0 +1,7 @@
+.badge-link_active {
+  @apply bg-hover;
+
+  span {
+    @apply opacity-100;
+  }
+}
