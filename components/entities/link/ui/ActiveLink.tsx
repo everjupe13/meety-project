@@ -12,6 +12,7 @@ type Props = {
   href: string
   prefetch?: boolean
   as?: string
+  scroll?: boolean
   className?: string
 }
 
