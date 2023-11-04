@@ -16,12 +16,12 @@ const ProfileUserBanner: FC = () => {
       <div className="px-24 py-20">
         <div className="ml-[190px] flex items-center justify-between">
           <div className="flex flex-col gap-y-8">
-            <h1 className="text-28 font-medium leading-none">
+            <h1 className="font-medium leading-none text-28">
               Kierra Rhiel Madsen
             </h1>
-            <div className="text-16 flex items-center gap-x-5 leading-none text-white/50">
+            <div className="flex items-center gap-x-5 leading-none text-white/50 text-16">
               <h2>@kierrkierr</h2>
-              <div className="text-12 text-[#A4A4A5]/50">●</div>
+              <div className="text-[#A4A4A5]/50 text-12">●</div>
               <p>1267 подписчиков</p>
             </div>
           </div>
