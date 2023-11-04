@@ -17,6 +17,7 @@ const BadgeLink: FC<Props> = ({ children, to, wrapperClasses, prefetch }) => {
     <ActiveLink
       prefetch={!!prefetch}
       href={to || ''}
+      scroll={false}
       activeClassName="badge-link_active"
       className={twMerge(
         clsx(
