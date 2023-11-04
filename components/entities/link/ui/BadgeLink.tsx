@@ -25,7 +25,7 @@ const BadgeLink: FC<Props> = ({ children, to, wrapperClasses, prefetch }) => {
         )
       )}
     >
-      <span className="text-14 font-semibold text-primary-foreground opacity-70 group-hover:opacity-100">
+      <span className="font-semibold text-primary-foreground opacity-70 text-14 group-hover:opacity-100">
         {children}
       </span>
     </ActiveLink>
