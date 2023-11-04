@@ -7,7 +7,7 @@ module.exports = {
     es2020: true
   },
 
-  ignorePatterns: ['.eslintrc.js', 'tailwind.config.ts'],
+  ignorePatterns: ['.eslintrc.js'],
 
   extends: [
     "next/core-web-vitals",
@@ -39,6 +39,7 @@ module.exports = {
     "unicorn/prefer-module": "off",
     "unicorn/no-null": "off",
     "unicorn/no-useless-undefined": "off",
+    "unicorn/consistent-function-scoping": "off",
 
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
