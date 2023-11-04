@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@mixin font($family, $filePath, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src:
+      url('#{$filePath}.woff') format('woff'),
+      url('#{$filePath}.woff2') format('woff2'),
+      url("#{$filePath}.ttf") format("truetype");
+
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+@include font('NT Somic', '/fonts/NT_somic/NTSomic-Regular', 400);
+@include font('NT Somic', '/fonts/NT_somic/NTSomic-Medium', 500);
+@include font('NT Somic', '/fonts/NT_somic/NTSomic-Bold', 700);

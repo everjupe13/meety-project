@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+
+  @apply m-0 p-0;
+}
+
+// html,
+// body {
+//   @apply flex h-full w-full flex-col flex-grow;
+// }
+
+#__nuxt {
+  @apply relative flex h-full min-h-screen w-full flex-grow flex-col;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: var(--background);
+
+  color: var(--primary-foreground);
+  line-height: 1.2;
+  font-size: 16px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  text-decoration-skip: objects;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-tap-highlight-color: transparent;
+
+  overflow-x: hidden;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
+
+  @include phone {
+    overscroll-behavior-y: contain;
+  }
+}
