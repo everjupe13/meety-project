@@ -13,7 +13,7 @@ const ProfilePostsFeedCardContentShowMore: FC<Props> = ({
   return (
     !expanded && (
       <p
-        className="text-orange relative inline-block translate-y-[0.5px] cursor-pointer px-3 font-semibold leading-normal text-16"
+        className="relative inline-block translate-y-[0.5px] cursor-pointer px-3 font-semibold leading-normal text-orange text-16"
         onClick={handleExpanded}
       >
         Показать все
