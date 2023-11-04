@@ -48,6 +48,8 @@ module.exports = {
         background: 'var(--background)',
         foreground: 'var(--topground)',
 
+        orange: 'var(--orange)',
+
         primary: {
           DEFAULT: 'var(--primary)',
           foreground: 'var(--primary-foreground)'
@@ -105,6 +107,7 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-animate'),
+    require('@tailwindcss/line-clamp'),
     plugin(({ addUtilities }: { addUtilities: any }) => {
       const typographyWithOnlySizes = {} as Record<string, any>
       for (let i = 8; i <= 100; i += 2) {
