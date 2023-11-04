@@ -1,7 +1,9 @@
 import { FC } from 'react'
 
+import { ProfileFeed } from '@/components/widgets/profile'
+
 const ShortsTab: FC = () => {
-  return <>shorts</>
+  return <ProfileFeed>shorts</ProfileFeed>
 }
 
 export default ShortsTab

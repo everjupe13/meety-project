@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import { ProfileFeed, ProfileUserBanner } from '@/components/widgets/profile'
+import { ProfileUserBanner } from '@/components/widgets/profile'
 
 export const metadata: Metadata = {
   title: 'Meety',
@@ -17,7 +17,7 @@ export default function RootLayout({
       <div className="grid grid-cols-[calc(100%-380px-25px)_380px] gap-x-25">
         <section className="flex flex-col gap-y-25">
           <ProfileUserBanner></ProfileUserBanner>
-          <ProfileFeed>{children}</ProfileFeed>
+          <div>{children}</div>
         </section>
 
         <section>

@@ -1,2 +1,5 @@
 export { default as ProfileFeed } from './ui/ProfileFeed'
+export { default as ProfilePersonalInfo } from './ui/ProfilePersonalInfo'
+export { default as ProfilePostsFeed } from './ui/ProfilePostsFeed'
+export { default as ProfilePostsFeedCard } from './ui/ProfilePostsFeedCard'
 export { default as ProfileUserBanner } from './ui/ProfileUserBanner'
