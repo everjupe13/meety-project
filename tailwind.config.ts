@@ -34,7 +34,7 @@ module.exports = {
 
     fontFamily: {
       sans: ['Montserrat', ...fallbackSansSerifFonts],
-      hnd: ['"Helvetica Now Display"', ...fallbackSansSerifFonts]
+      'sf-pre': ['SF Pro Expanded', ...fallbackSansSerifFonts]
     },
     spacing: object0to100px,
     extend: {
@@ -43,12 +43,19 @@ module.exports = {
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
 
-        hover: 'var(--hover-topground)',
+        hover: {
+          DEFAULT: 'var(--hover-topground)'
+        },
 
         background: 'var(--background)',
         foreground: 'var(--topground)',
+        cards: 'var(--cards-bg)',
 
         orange: 'var(--orange)',
+        'toxic-green': {
+          DEFAULT: 'var(--toxic-green)',
+          'button-hover': 'var(--toxic-green-hovered)'
+        },
 
         primary: {
           DEFAULT: 'var(--primary)',
