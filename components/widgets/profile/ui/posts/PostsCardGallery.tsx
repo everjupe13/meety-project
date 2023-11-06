@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
-const ProfilePostsFeedCardGallery: FC = ({}) => {
+const PostsCardGallery: FC = ({}) => {
   return (
     <div className="grid grid-cols-[calc(55%-6px)_calc(45%-6px)] gap-12">
       <div className="row-span-2 flex items-center justify-center overflow-hidden rounded-[14px]">
@@ -35,4 +35,4 @@ const ProfilePostsFeedCardGallery: FC = ({}) => {
   )
 }
 
-export default ProfilePostsFeedCardGallery
+export default PostsCardGallery

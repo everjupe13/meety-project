@@ -6,7 +6,7 @@ type Props = {
   expanded?: boolean
 }
 
-const ProfilePostsFeedCardContent: FC<Props> = ({ expanded }) => {
+const PostsCardContent: FC<Props> = ({ expanded }) => {
   return (
     <p
       className={clsx(
@@ -42,4 +42,4 @@ const ProfilePostsFeedCardContent: FC<Props> = ({ expanded }) => {
   )
 }
 
-export default ProfilePostsFeedCardContent
+export default PostsCardContent

@@ -6,10 +6,7 @@ type Props = {
   handleExpanded?: () => void
 }
 
-const ProfilePostsFeedCardContentShowMore: FC<Props> = ({
-  expanded,
-  handleExpanded
-}) => {
+const PostsCardContentShowMore: FC<Props> = ({ expanded, handleExpanded }) => {
   return (
     !expanded && (
       <p
@@ -22,4 +19,4 @@ const ProfilePostsFeedCardContentShowMore: FC<Props> = ({
   )
 }
 
-export default ProfilePostsFeedCardContentShowMore
+export default PostsCardContentShowMore

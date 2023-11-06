@@ -14,7 +14,7 @@ type Props = {
   setLiked: () => void
 }
 
-const ProfilePostsFeedCardEstimated: FC<Props> = ({ liked, setLiked }) => {
+const PostsCardEstimated: FC<Props> = ({ liked, setLiked }) => {
   return (
     <div className="flex items-center gap-x-8">
       <button
@@ -58,4 +58,4 @@ const ProfilePostsFeedCardEstimated: FC<Props> = ({ liked, setLiked }) => {
   )
 }
 
-export default ProfilePostsFeedCardEstimated
+export default PostsCardEstimated

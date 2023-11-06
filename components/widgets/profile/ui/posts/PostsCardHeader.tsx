@@ -5,7 +5,7 @@ import { FC } from 'react'
 
 import UserImage from '@/assets/img/user-girl.png'
 
-const ProfilePostsFeedCardHeader: FC = () => {
+const PostsCardHeader: FC = () => {
   return (
     <div className="flex items-center justify-between">
       <div className="flex flex-grow items-center gap-x-8">
@@ -33,4 +33,4 @@ const ProfilePostsFeedCardHeader: FC = () => {
   )
 }
 
-export default ProfilePostsFeedCardHeader
+export default PostsCardHeader
