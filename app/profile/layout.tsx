@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 
+import { LadderTablePreview } from '@/components/widgets/ladder'
 import { ProfileUserBanner } from '@/components/widgets/profile'
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
         </section>
 
         <section>
-          <div></div>
+          <LadderTablePreview />
         </section>
       </div>
     </div>

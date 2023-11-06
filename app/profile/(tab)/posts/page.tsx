@@ -1,18 +1,18 @@
 import { FC } from 'react'
 
 import {
-  ProfileFeed,
-  ProfilePostsFeed,
-  ProfilePostsFeedCard
+  Posts,
+  PostsCard,
+  ProfileFeedHeader
 } from '@/components/widgets/profile'
 
 const PostsTab: FC = () => {
   return (
     <div className="flex flex-col gap-y-24">
-      <ProfileFeed>
-        <ProfilePostsFeedCard type="gallery" />
-      </ProfileFeed>
-      <ProfilePostsFeed />
+      <ProfileFeedHeader>
+        <PostsCard type="gallery" />
+      </ProfileFeedHeader>
+      <Posts />
     </div>
   )
 }

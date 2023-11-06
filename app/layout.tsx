@@ -29,7 +29,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <header className="flex h-95 items-center justify-between border-b border-white/20 px-40 py-15">
             <Logo />
-            <UserAvatarNav />
+            <UserAvatarNav src="/images/mock-boy-avatar.png" />
           </header>
           <main className="pb-40 pt-25">{children}</main>
         </body>

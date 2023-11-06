@@ -12,7 +12,7 @@ type Props = {
   children?: ReactNode
 }
 
-const ProfileFeed: FC<Props> = ({ children }) => {
+const ProfileFeedHeader: FC<Props> = ({ children }) => {
   const { isUnstyledBorderRoute } = useTabsInfo()
 
   return (
@@ -32,4 +32,4 @@ const ProfileFeed: FC<Props> = ({ children }) => {
   )
 }
 
-export default ProfileFeed
+export default ProfileFeedHeader
