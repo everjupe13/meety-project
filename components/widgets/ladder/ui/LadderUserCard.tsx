@@ -19,7 +19,7 @@ const LadderUserCard: FC<Props> = ({
 }) => {
   return (
     <div
-      className={clsx('bg-cards h-69 rounded-[14px] px-16 py-14', className)}
+      className={clsx('h-69 rounded-[14px] bg-cards px-16 py-14', className)}
     >
       <div className="flex items-center gap-x-16">
         <div className="flex h-34 w-34 items-center justify-center rounded-full bg-hover p-3">
