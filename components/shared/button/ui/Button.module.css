@@ -1,0 +1,36 @@
+.primary {
+  @apply rounded-[14px] bg-toxic-green text-primary transition-all hover:bg-toxic-green-button-hover active:bg-toxic-green-button-hover active:opacity-90 disabled:opacity-50;
+}
+
+.secondary {
+  @apply rounded-[14px] bg-hover text-primary-foreground transition-all hover:opacity-90 active:opacity-80 disabled:opacity-50;
+}
+
+a.secondary {
+  @apply hover:bg-toxic-green hover:text-white;
+}
+
+.outlined-secondary {
+  @apply bg-transparent text-primary-foreground rounded-[14px] border border-white/10 transition-all hover:bg-hover active:bg-hover active:opacity-90
+}
+
+.icon {
+  @apply flex items-center justify-center w-48;
+}
+
+.default {
+  @apply flex items-center justify-center w-auto;
+}
+
+.normal {
+  @apply px-16 py-16 text-16 font-medium h-48 leading-none;
+}
+
+.mini {
+  @apply px-16 py-16 text-16 font-medium leading-none;
+}
+
+.mini-with-big-text {
+  @apply px-16 py-16 text-16 font-medium leading-none;
+}
+
