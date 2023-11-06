@@ -1,16 +1,46 @@
-import Image from 'next/image'
+import clsx from 'clsx'
 import Link from 'next/link'
 import { FC } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-import UserImage from '@/assets/img/user.png'
+import { UserAvatar } from '@/components/entities/user'
 
-const UserAvatarNav: FC = () => {
+type Props = {
+  className?: string
+  src?: string
+  width?: number
+  height?: number
+}
+
+const UserAvatarNav: FC<Props> = ({
+  width = 48,
+  height = 48,
+  src,
+  className
+}) => {
   return (
     <Link
       href="/profile"
-      className="flex h-48 w-48 items-center justify-center overflow-hidden rounded-full"
+      className={twMerge(
+        clsx(
+          'flex h-48 w-48 items-center justify-center overflow-hidden rounded-full',
+          className
+        )
+      )}
+      style={{
+        width: `${width}px`,
+        height: `${height}px`
+      }}
     >
-      <Image src={UserImage} alt="" width={48} height={48}></Image>
+      <UserAvatar
+        width={width}
+        height={height}
+        src={src || ''}
+        style={{
+          width: `${width}px`,
+          height: `${height}px`
+        }}
+      ></UserAvatar>
     </Link>
   )
 }
