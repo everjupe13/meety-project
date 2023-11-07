@@ -56,6 +56,7 @@ module.exports = {
           DEFAULT: 'var(--toxic-green)',
           'button-hover': 'var(--toxic-green-hovered)'
         },
+        purple: 'var(--purple)',
 
         primary: {
           DEFAULT: 'var(--primary)',
