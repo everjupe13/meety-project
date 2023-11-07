@@ -1,5 +1,6 @@
 export { default as Posts } from './ui/posts/Posts'
 export { default as PostsCard } from './ui/posts/PostsCard'
+export { default as ProfileAlbumTab } from './ui/ProfileAlbumTab'
 export { default as ProfileFeed } from './ui/ProfileFeed'
 export { default as ProfileFeedHeader } from './ui/ProfileFeedHeader'
 export { default as ProfilePersonalInfo } from './ui/ProfilePersonalInfo'

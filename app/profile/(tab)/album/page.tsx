@@ -1,9 +1,13 @@
 import { FC } from 'react'
 
-import { ProfileFeed } from '@/components/widgets/profile'
+import { ProfileAlbumTab, ProfileFeed } from '@/components/widgets/profile'
 
 const AlbumTab: FC = () => {
-  return <ProfileFeed>album</ProfileFeed>
+  return (
+    <ProfileFeed>
+      <ProfileAlbumTab></ProfileAlbumTab>
+    </ProfileFeed>
+  )
 }
 
 export default AlbumTab
