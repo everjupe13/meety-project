@@ -14,7 +14,7 @@ const AlbumCard: FC<Props> = ({ className, image, id, restricted = false }) => {
       className={clsx(
         'relative flex items-center justify-center overflow-hidden rounded-[14px]',
         {
-          'after:bg-purple after:absolute after:inset-[-5px] after:z-[2] after:block after:opacity-50':
+          'after:absolute after:inset-[-5px] after:z-[2] after:block after:bg-purple after:opacity-50':
             restricted
         },
         className
